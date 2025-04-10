@@ -1,24 +1,47 @@
-## Desktop application for a robotic gripper ( Based on Electron.js )
-
-
+# Desktop Application for Serial Monitor (Based on Electron.js)
 
 ![alt text](images/demo.jpeg)
 
+## Description
+
+This application is used to communicate with serial-powered devices via serial communication. Built with Electron.js, it connects to devices using a fixed baud rate of 9600. The application provides both Serial Reader and Serial Writer functionality, allowing you to read and write serial data in real-time.
+
+I use this application for my custom projects where I need to send specific commands to a robot gripper, but it can be adapted for any microcontroller-based or serial-powered device. This application is especially useful for debugging and monitoring serial communication between your computer and embedded systems.
 
 
+## How to Run This Application
 
-##  How to run this application
+1. Navigate into the project directory:
 
+    ```bash
+    cd <this_repo>/src
+    ```
 
-	1. git clone <this_repo>
-	2. cd <this_repo>
-	3. cd src
-	4. chmod 777 install.sh
-	5. ./install.sh    [ If there is an error, try running ./install_on_error.sh ]
-	6. ./run.sh
+2. Set proper permissions for the installation script:
+
+    ```bash
+    chmod 777 install.sh
+    ```
+
+3. Run the installation script:
+
+    ```bash
+    ./install.sh
+    ```
+
+    > If you encounter an error, try running:
+
+    ```bash
+    ./install_on_error.sh
+    ```
+
+4. Launch the application:
+
+    ```bash
+    ./run.sh
+    ```
 
 ## Test Cases [ Serial Reader and Serial Writer ]
 
-    Both test cases are tested with Arduino Uno.
-
+Both test cases are tested with **Arduino Uno** using a **baud rate of 9600** for serial communication.
 
